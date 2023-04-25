@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*Sans-Serif font for headlines*/
+@font-face {
+    font-family: Oswald;
+    src: url(../Fonts/Oswald-VariableFont_wght.ttf) format('truetype');
+ }
+
+/*Serif font for body text*/
+@font-face {
+    font-family: Bitter;
+    src: url(../Fonts/Bitter-VariableFont_wght.ttf) format('truetype');
+ }
+
+/*
+
+   1.5 Challenge Style Sheet
+   Author:  Chris Lucas
+   Date:    4/21/2023
+
+   Filename: as_style.css
+
+*/
+
+
+/* Structural Styles */
+
+html {
+   background-color: #A49E8D;
+}
+
+body {
+   background-color: #2a2426;
+   background-image: url(../Images/asfalt-light.png);
+   font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+   background-color: #689689;
+   font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+   color: #FFFFFF;
+   text-shadow: 1px 1px 3px #3A3335;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+/* Heading Styles */
+
+header {
+    background-color: #689689;
+    background-image: url(../Images/asfalt-dark.png);
+    text-align: center;
+}
+
+/* Navigation Styles */
+
+nav.TopNav {
+    background-color: #689689;
+    background-image: url(../Images/asfalt-dark.png);
+    text-align: center;
+    border-top: #9F84BD;
+    border-bottom: #9F84BD;
+    border-width: .5em;
+    border-bottom-width: .2em;
+    border-top-style: groove;
+    border-bottom-style: solid;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+nav.TopNav a {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+/* Unimplemented SideNav for larger portfolio quick access
+nav.SideNav aside {
+    display: block;
+    background-color: #689689;
+    color: #161414;
+    width: auto;
+    margin-top: 2em;
+    margin-left: 1em;
+    padding-right: .6em;
+    float: left;
+}
+
+nav.SideNav aside p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+*/
+
+/* Article Styles */
+
+div {
+    width: 400px;
+    margin: 5px;
+    padding: 1em;
+    text-align: center;
+}
+
+div h2 {
+    color: white;
+    font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    margin-top: -.1em;
+}
+
+div h4 {
+    font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
+    color: #BACEC7;
+    margin: -.2em;
+}
+
+div p {
+    color: white;
+    text-align: left;
+}
+
+div p::first-line {
+    color: #BACEC7;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+
+q {
+    quotes: '\201C' '\201D';
+}
+
+div.details {
+    color: #CFCBC4;
+    display: block;
+    text-align: right;
+    margin-top: -.5em;
+    margin-left: 200px;
+    width: 175px
+}
+/* Aside Styles */
+
+/* List Styles */
+
+ul.wrapper {
+    display: flex;
+    flex-flow: wrap;
+    list-style-type: none;
+    list-style-position: inside;
+    justify-content: center;
+}
+
+ul.wrapper li {
+    background-color: #585254;
+    border: #689689;
+    box-shadow: 2px 2px #A49E8D;
+    margin: 1em 1em;
+
+}
+
+/* Unimplemented SideNav for larger portfolio quick access
+ul.Modules {
+    list-style-type: none;
+    margin-left: -1.5em;
+}
+
+ul.Modules ul {
+    list-style-type: square;
+    margin-left: -.8em;
+}
+*/
+
+/* Hyperlink Styles */
+
+a:link > h2 {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited > h2 {
+    color: #ccb5da;
+    text-decoration: none;
+}
+
+a:hover > h2 {
+    color: #E6D8EE;
+    text-decoration: none;
+}
+
+a:active > h2 {
+    color: #E6D8EE;
+    text-decoration: none;
+}
+
+li a:link {
+    color: #161414;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: #161414;
+    text-decoration: none;
+}
+
+li a:hover h2 {
+    color: #161414;
+    text-decoration: none;
+}
+
+li a:active {
+    color: #161414;
+    text-decoration: none;
+}
+
+
