@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*
+   Activity Page
+   Story Page One
+    Author:     Chris Lucas
+    Date:       5.9.23
+    Filename:   pageTwo.css
+*/
+
+
+/* HTML and Body styles */
+
+html {
+    background-color: #060d21;
+}
+
+body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #031d44;
+    text-align: center;
+}
+
+/* Header styles */
+
+header {
+    background-color: #dab785;
+    color: #0b132b;
+}
+
+header h1 {
+    text-align: center;
+    font-size: x-large;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+nav a {
+    display: flexbox;
+    width: 50%;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+/* Container Styles */
+
+div {
+    border-top: 2px solid #dab785;
+    border-bottom: 2px solid #dab785;
+    padding-top: 1em;
+}
+
+div:first-of-type {
+    border-top: none;
+}
+
+div:last-of-type {
+    border-bottom: none;
+}
+
+section.text p {
+    margin-left: 20px;
+}
+
+
+/* Main Section styles */
+
+div section h3 {
+    text-align: center;
+    color: #d1ccdc;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    font-size: x-large;
+}
+
+div section p {
+    display: block;
+    color: #d1ccdc;
+    font-size: large;
+    padding: 0em 1em 1em 0em;
+    text-align: justify;
+}
+
+div section img {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #dab785;
+    color: #0b132b;
+    text-align: center;
+}

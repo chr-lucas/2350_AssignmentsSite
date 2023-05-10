@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*
+   Activity Page
+   Story Page One
+    Author:     Chris Lucas
+    Date:       5.9.23
+    Filename:   pageOne.css
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background-color: #0d1b2a;
+}
+
+body {
+   background-color: #415a77;
+   color: #e0e1dd;
+   min-width: 30vmax;
+   max-width: 50vmax;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 6px;
+}
+
+/* Header styles */
+
+header {
+   background-color: #778da9;
+}
+
+header h1 {
+   font-size: 1.6em;
+   text-align: center;
+   color: #0d1b2a;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+
+/* Nav Styles */
+
+/* Nav Styles */
+
+nav {
+   background-color: #778da9;
+   text-align: left;
+   margin-top: -1.8em;
+   border-bottom: 2px solid #e0e1dd;
+   padding-top: 8px;
+   padding-bottom: 5px;
+}
+
+
+
+/* Container Styles */
+
+div {
+   clear: both;
+   justify-content: center;
+}
+
+div section {
+   display: block;
+   width: 50%;
+}
+
+
+/* Main Section styles */
+
+div section.text {
+   width: 50%;
+   padding: 5px;
+}
+
+div section.text h3 {
+   text-align: center;
+   font-size: 1.6em;
+   margin-top: 3px;
+   padding-bottom: 2px;
+}
+
+div section.text p {
+   text-align: center;
+   font-size: 1.2em;
+   margin-top: 2px;
+}
+
+div section.img img {
+   min-width: 50%;
+   max-width: 100%;
+}
+
+div#one section.text,
+div#three section.text,
+div#five section.text {
+   float: left;
+}
+
+div#two section.text,
+div#four section.text {
+   float: right;
+}
+
+div#one section.img,
+div#three section.img,
+div#five section.img {
+   float: right;
+}
+
+
+div#two section.img,
+div#four section.img {
+   float: left;
+}
+
+
+/* Footer styles */
+
+footer {
+   clear: both;
+   text-align: center;
+   background-color: #778da9;
+   color: #0d1b2a;
+   font-size: 1.2em;
+   padding-top: .3em;
+   vertical-align: middle;
+}
