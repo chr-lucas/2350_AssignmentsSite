@@ -1,5 +1,5 @@
 /*
-   
+
    Filename: mp_layout.css
 
    This file contains the layout styles used in the Mobile Panini website
@@ -8,7 +8,7 @@
 
 /* =============================================
 	Base layout styles used by mobile devices
-	up to 480px and cascaded to larger devices 
+	up to 480px and cascaded to larger devices
 	unless superceded by other styles.
    =============================================
 */
@@ -136,7 +136,7 @@ article div h1 {
 article p, article address {font-family: "Times New Roman", Times, serif;}
 /* =============================================
 	Tablet layout styles used by devices
-	481px to 768px and cascaded to larger 
+	481px to 768px and cascaded to larger
 	devices.
    =============================================
 */
