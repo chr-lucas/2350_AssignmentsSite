@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+    Activity Page
+    Schedule Page
+    Author:     Chris Lucas
+    Date:       5.10.23
+    Filename:   style.css
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background-color: #0D0221;
+}
+
+body {
+   width: 85%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Header styles */
+
+h1 {
+   color: antiquewhite;
+   font-size: xx-large;
+   text-align: center;
+   padding-top: .5em;
+   padding-bottom: .5em;
+}
+
+/* Table Styles */
+table {
+   table-layout: auto;
+   border-collapse: collapse;
+   background-color: #456990;
+}
+
+th {
+   background-color: #F45B69;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: antiquewhite;
+}
+
+th, td {
+   border: 2px solid #152537;
+   color: #E4FDE1;
+   text-align: center;
+   padding: .2em;
+}
+
+td.sleep {
+   background-color: #152537;
+   background-image: url("../images/sleep.png");
+}
+
+
+/* Column Styles */
+
+col#time {
+   width: 16%;
+}
+
+col#weekday {
+   width: 12%;
+}
+
+col#weekend {
+   width: 12%;
+   background-color: #213549;
+}
+
+/* Caption Styles */
+
+caption {
+   caption-side: bottom;
+   text-align: left;
+   color: #E4FDE1;
+   font-size: x-small;
+}
