@@ -29,17 +29,22 @@ h1 {
    text-align: center;
    padding-top: .5em;
    padding-bottom: .5em;
+   width: 50%;
+   margin: auto;
 }
 
 /* Table Styles */
 table {
    table-layout: auto;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
    border-collapse: collapse;
    background-color: #456990;
 }
 
 th {
-   background-color: #F45B69;
+   background-color: #864406;
    text-transform: uppercase;
    font-weight: bold;
    color: antiquewhite;
