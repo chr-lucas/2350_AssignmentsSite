@@ -17,6 +17,7 @@
    1.5 Challenge Style Sheet
    Author:  Chris Lucas
    Date:    4/21/2023
+   Revised: 5/20/2023
 
    Filename: as_style.css
 
@@ -30,13 +31,13 @@ html {
 }
 
 body {
-   background-color: #2a2426;
-   background-image: url(../Images/asfalt-light.png);
-   font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    background: url(../Images/asfalt-light.png);
+    background-color: #2a2426;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
 }
 
 footer {
-   background-color: #689689;
+   background: linear-gradient(#689689 60%, #161414);
    font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
    text-align: center;
    color: #FFFFFF;
@@ -95,6 +96,18 @@ nav.SideNav aside p {
 
 /* Article Styles */
 
+article {
+    background: url(../Images/asfalt-light.png), url(../Images/background_filigree.png);
+    background-repeat: repeat, no-repeat;
+    background-origin: border-box, border-box;
+    background-size: auto, 12%;
+    background-position: top left, top left;
+    background-position-x: 0px, 5px;
+    background-position-y: 0px, 5px;
+    background-color: #2a2426;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+}
+
 div {
     width: 400px;
     margin: 5px;
@@ -104,6 +117,7 @@ div {
 
 div h2 {
     color: white;
+    text-shadow: #161414 1px 1px;
     font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
     margin-top: -.1em;
@@ -112,6 +126,7 @@ div h2 {
 div h4 {
     font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
     color: #BACEC7;
+    text-shadow: #161414 1px 1px;
     margin: -.2em;
 }
 
@@ -122,6 +137,7 @@ div p {
 
 div p::first-line {
     color: #BACEC7;
+    text-shadow: #161414 1px 1px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: large;
@@ -141,6 +157,25 @@ div.details {
 }
 /* Aside Styles */
 
+/* Image Styles */
+
+img.imageMap {
+    clear: both;
+    opacity: 0.8;
+    transform: translate(-50%);
+    filter: grayscale(0.4);
+    margin-right: auto;
+    margin-left: 50%;
+    margin-bottom: 1em;
+    padding: .5em;
+    border-style: solid;
+    border-image: url(../Images/border_image.png);
+    border-image-slice: 80 80 80 80;
+    border-image-width: 42px 42px 42px 42px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+}
+
 /* List Styles */
 
 ul.wrapper {
@@ -149,14 +184,24 @@ ul.wrapper {
     list-style-type: none;
     list-style-position: inside;
     justify-content: center;
+    padding-top: 2em;
 }
 
 ul.wrapper li {
-    background-color: #585254;
-    border: #689689;
-    box-shadow: 2px 2px #A49E8D;
+    background: radial-gradient(circle at top left, rgba(88,82,84,1) 25%, rgba(34,33,33,1) 100%);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow:
+        4px 4px 3px #A49E8D,
+        inset 2px 2px 15px #2a2426;
     margin: 1em 1em;
+    transform: perspective(1200px) rotateX(-10deg);
+}
 
+ul.wrapper li div img {
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-radius: 0px 0px 20px 20px;
+    transform: perspective(1200px) rotateX(-20deg);
 }
 
 /* Unimplemented SideNav for larger portfolio quick access
@@ -172,6 +217,9 @@ ul.Modules ul {
 */
 
 /* Hyperlink Styles */
+a:link {
+    text-shadow: #161414 1px 1px;
+}
 
 a:link > h2 {
     color: #FFFFFF;
