@@ -261,4 +261,24 @@ li a:active {
     text-decoration: none;
 }
 
+q a:link {
+    color: #87d8c1;
+    text-decoration: none;
+}
+
+q a:visited {
+    color: #c8a5f1;
+    text-decoration: none;
+}
+
+q a:hover h2 {
+    color: #c8a5f1;
+    text-decoration: none;
+}
+
+q a:active {
+    color: #87d8c1;
+    text-decoration: none;
+}
+
 
