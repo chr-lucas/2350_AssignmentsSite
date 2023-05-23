@@ -1,0 +1,52 @@
+/*
+
+   Survey Forms Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         rb_forms.css
+
+*/
+
+/* Form Layout Styles */
+/* See Tutorial 5 for details on using a flexible layout */
+
+form#survey {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+  -webkit-flex: 1 1 300px;
+  flex: 1 1 300px;
+}
+
+div.formRow {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+div.formRow > * {
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+/* Text Area Styles */
+
+/* Spinner Styles */
+/* See Tutorial 5 for details on using a flexible layout */
+
+div.formRow > input#dineSpin {
+  -webkit-flex: 0 0 50px;
+  flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+/* Validation Styles */
