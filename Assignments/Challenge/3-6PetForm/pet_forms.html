@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      Author:   Chris Lucas
+      Date:     5.25.23
+      Filename: pet_forms.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blue Ribbon Pets</title>
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Blue Ribbon Pets</h1>
+      <h3>Northern Utah's Premier Pet Competition</h3>
+    </header>
+
+    <article>
+      <div id="introText">
+        <h2 class="intro">Each year, pet owners from around the Salt Lake Valley bring their
+          lovable pets to compete for the ultimate prize: The Blue Ribbon Pets
+          Best-in-Show award! While not every pet can win the coveted prize, every
+          pet is a winner in our book. Enter the details below to
+          sign your pet up today, and show everyone they're a Blue Ribbon Pet!
+        </h2>
+        <div id="introImg">
+          <img src="images/bird.png" alt="a photo of bird" class="intro">
+          <img src="images/dog.png" alt="a photo of dog" class="intro">
+          <img src="images/cat.png" alt="a photo of cat" class="intro">
+          <img src="images/rodent.png" alt="a photo of rodent" class="intro">
+          <img src="images/reptile.png" alt="a photo of a lizard" class="intro">
+        </div>
+      </div>
+
+      <aside>
+        <h4>Last Year's Event:</h4>
+        <img src="images/asideOne.jpg"
+          alt="last year's dog champion" class="aside">
+          <figcaption class="aside">Blitz, 2022 Best in Show</figcaption>
+        <img src="images/asideTwo.jpg"
+          alt="last year's bird champion" class="aside">
+          <figcaption class="aside">Crackers, 2022 singing champion</figcaption>
+        <img src="images/asideThree.jpg"
+          alt="last year's reptile champion" class="aside">
+          <figcaption class="aside">Rupert, 2022 cutest pet</figcaption>
+      </aside>
+
+      <form
+        action="http://cs2350.richfry.com/"
+        method="POST">
+
+      <!-- Pet related form data -->
+      <fieldset>
+        <legend>Pet Information</legend>
+        <div>
+          <label for="petNameText">Name:</label>
+          <input name="petName" id="petNameText" type="text">
+        </div>
+        <div>
+          <label for="petBirthDate">Birthdate:</label>
+          <input name="petBirthdate" id="petBirthDate" type="date">
+        </div>
+        <div>
+          <p>What kind of pet are you entering?</p>
+          <input name="petType" id="petTypeCat" type="radio">
+          <label for="petTypeCat">Cat</label>
+          <input name="petType" id="petTypeDog" type="radio">
+          <label for="petTypeDog">Dog</label>
+          <input name="petType" id="petTypeReptile" type="radio">
+          <label for="petTypeReptile">Reptile</label>
+          <input name="petType" id="petTypeBirb" type="radio">
+          <label for="petTypeBirb">Bird</label>
+          <input name="petType" id="petTypeRodent" type="radio">
+          <label for="petTypeRodent">Rodent</label>
+        </div>
+        <div id="bioPrompt">
+          <p>We'd love to hear more about your pet. Please
+            include a short bio in the box provided.</p>
+        </div>
+        <div>
+          <textarea name="petBio" id="petBioText"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Owner related form data -->
+      <fieldset>
+        <legend>Owner Information</legend>
+        <div>
+          <label for="ownerNameText">Name:</label>
+          <input name="ownerName" class="required" id="ownerNameText"
+            type="text" required>
+        </div>
+        <div>
+          <label for="ownerPhoneTel">Phone Number:</label>
+          <input name="ownerPhone" class="required" id="ownerPhoneTel"
+            type="tel" placeholder="##########"
+            pattern="^\d{10}$|^\(\d{3}\)\s?\d{3}[\s-]?\d{4}$" required>
+        </div>
+        <div>
+          <label for="ownerEmailEmail">Email:</label>
+          <input name="ownerEmail" class="required" id="ownerEmailEmail"
+            type="email" required>
+        </div>
+      </fieldset>
+
+      <!-- Entry related form data -->
+      <fieldset>
+        <legend>Entry Details</legend>
+        <div>
+          <p>Which contests are you entering?</p>
+          <input name="entrySing" id="entrySingCheck" type="checkbox">
+          <label for="entrySingCheck">Singing Pet</label>
+          <input name="entryCute" id="entryCuteCheck" type="checkbox">
+          <label for="entryCuteCheck">Cutest Pet</label>
+          <input name="entryTrick" id="entryTrickCheck" type="checkbox">
+          <label for="entryTrickCheck">Pet Tricks</label>
+        </div>
+        <div>
+          <label for="entryNameText">Name of the entry:</label>
+          <input name="entryName" id="entryNameText" type="text">
+        </div>
+        <div>
+          <label for="entryTrickTypeSelect" id="trickLabel">If your pet will be
+            competing in the Pet Tricks Competition, please select the type of
+            routine from the available options:</label>
+          <select name="entryTrickType"
+            id="entryTrickTypeSelect">
+            <option>Obstacle Course</option>
+            <option>Frisbee/Ball/Other Catching</option>
+            <option>Roll Over/Play Dead</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Boarding related form data -->
+      <fieldset>
+        <legend>Bording Requirements</legend>
+        <div>
+          <label for="boardTimeNum">Number of days of boarding</label>
+          <input name="boardTime" id="boardTimeNum"
+            type="number" min="0" max="3">
+        </div>
+        <div>
+          <label for="boardKennelSlide">Kennel size (in inches)</label>
+          0in
+          <input name="boardKennelSize" id="boardKennelSlide" type="range"
+            min="0" max="48" step="8">
+            48in
+        </div>
+      </fieldset>
+      <div id="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+     </div>
+      </form>
+    </article>
+
+    <footer>
+      BLUE RIBBON PETS &bullet; 1111 MAIN ST OGDEN, UT &bullet; 555-555-5555
+    </footer>
+  </body>
+</html>
