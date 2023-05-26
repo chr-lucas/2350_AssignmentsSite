@@ -138,6 +138,11 @@ form {
    font-weight: 700;
 }
 
+textarea {
+   width: 98%;
+   resize: vertical;
+}
+
 label#trickLabel {
    display: block;
    margin-bottom: .2em;
