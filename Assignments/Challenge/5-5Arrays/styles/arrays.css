@@ -1,0 +1,152 @@
+/*
+
+   Author:     Chris Lucas
+   Date:       6.18.23
+
+*/
+
+/* Whole Page Styles */
+
+html {
+   background-color: #0F0006;
+   background-image: url("../images/htmlBG.png");
+}
+
+body {
+   background-color: #636564;
+   background-image: url("../images/bodyBG.png");
+   box-shadow:
+      #000000 0px 0px 45px,
+      #000000 0px 0px 10px inset;
+   width: 850px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   padding-top: 0;
+}
+
+   /* Header Styles */
+   h1 {
+      text-align: center;
+      margin-top: 0;
+      padding-top: 0;
+   }
+
+   h2 {
+      color: #5995ED;
+      text-shadow: #0F0006 1px 1px;
+      margin-left: 2%;
+   }
+
+/* Universal Section Styles */
+
+section {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+   border: #0F0006 solid 3px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 24px;
+}
+
+/* Part One */
+section:nth-of-type(1) {
+   border-bottom: 0px;
+}
+
+   /* Table Styles */
+   table, th, td {
+      border-collapse: collapse;
+      border: #0F0006 solid 2px;
+   }
+
+   table {
+      color: black;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   table, th {
+      border-width: 4px;
+   }
+
+   th, td {
+      padding: 1px, 3px, 1px, 3px;
+   }
+
+   th {
+      background-color: #0F0006;
+      color: white;
+   }
+
+   td {
+      background-color: #9DBF9E;
+      text-align: left;
+      padding-left: 4%;
+      padding-top: 3px;
+      padding-bottom: 3px;
+   }
+
+/* Part Two */
+section:nth-of-type(2) {
+   border-bottom: 0px;
+   font-size: x-large;
+}
+
+section:nth-of-type(2) h2 {
+clear: both;
+margin-bottom: 8px;
+padding-bottom: 2px;
+}
+
+ul {
+   list-style: none;
+   margin: auto;
+}
+
+li {
+   display: flex;
+   float: left;
+   text-transform: uppercase;
+   text-shadow: #0F0006 1px 1px;
+   padding-right: 8px;
+}
+ ul:last-of-type {
+   padding-bottom: 30px;
+ }
+
+/* Part Three */
+section:last-of-type {
+   border: #0F0006 solid 3px;
+   text-align: center;
+   margin-bottom: 12px;
+}
+
+section:last-of-type div p {
+   font-size: x-large;
+   padding-bottom: 4px;
+   margin-bottom: 4px;
+}
+
+
+
+/* Footer Style */
+footer {
+   text-align: center;
+   background-color: #9DBF9E;
+   border-color: #5995ED;
+   border-style: solid;
+   border-width: 6px 0px 0px 0px;
+   box-shadow: #000000 0px 0px 5px inset;
+}
+
+footer h4 {
+   line-height: 16pt;
+}
+
+footer h4:last-of-type {
+   margin-top: -14px;
+   padding-bottom: 10px;
+}
