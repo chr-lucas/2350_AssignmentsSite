@@ -33,11 +33,11 @@ var h1Tag = document.getElementsByTagName("h1");
 h1Tag[0].after(imgElm);
 
 // Set event listener for the myPic img tag
-document.getElementById("myPic").addEventListener("click", randPic);
+document.getElementById("myPic").addEventListener("click", changePic);
 
 
 // Create picture cycling function
-function randPic()
+function changePic()
 {
     var imageSuf = [1,2,3,4,5,6,7,8,9,10];
     var indexNum = Math.floor(Math.random() * imageSuf.length);
